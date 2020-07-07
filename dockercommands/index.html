@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+  }
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+ <a href="https://linuxhero.tk">Home</a>
+   <div class="dropdown">
+     <button class="dropbtn">Linux 
+        <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+        <a href="https://linuxhero.tk/linuxinfo/">Linux Introduction</a>
+       <a href="https://linuxhero.tk/linuxdistros/">Linux Distributions</a>
+       <a href="https://linuxhero.tk/linuxcommands/">Linux Commands</a>
+       <a href="https://linuxhero.tk/ntp/">Configure NTP</a>
+       <a href="https://linuxhero.tk/ssh/">Configure SSH</a>
+       <a href="https://linuxhero.tk/nfs/">Configure NFS</a>
+       <a href="https://linuxhero.tk/iscsi/">Configure iSCSI Storage</a>  
+        <a href="https://linuxhero.tk/dhcp/">Configure Dnsmasq</a>
+       <a href="https://linuxhero.tk/ftp/">Configure FTP Server</a>
+       <a href="https://linuxhero.tk/lvm/">Configure LVM</a>
+     </div>
+    </div> 
+   <div class="dropdown">
+    <button class="dropbtn">Linux Troubleshooting 
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+      <a href="https://linuxhero.tk/Analyzebottlenecks/">Steps To Analyze Linux Performance Bottlenecks</a>
+      <a href="https://linuxhero.tk/cpubottlenecks/">CPU Bottlenecks</a>
+        <a href="https://linuxhero.tk/memorybottlenecks/">Memory Bottlenecks</a>
+       <a href="https://linuxhero.tk/diskbottlenecks/">Disk Bottlenecks</a>
+       <a href="https://linuxhero.tk/networkbottlenecsk/">Network Bottlenecks</a>
+     </div>
+    </div>
+   <div class="dropdown">
+    <button class="dropbtn">Devops 
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://linuxhero.tk/devopsinfo/">What is Devops?</a>
+      <a href="https://linuxhero.tk/devopstools/">Devops Tools</a>
+      <a href="https://linuxhero.tk/jenkins/">Configure Jenkins</a>
+      <a href="https://linuxhero.tk/docker/">Configure Docker</a>
+      <a href="https://linuxhero.tk/kubernetes/">Configure Kubernetes</a>
+      <a href="https://linuxhero.tk/puppet/">Configure Puppet</a>
+      <a href="https://linuxhero.tk/ansible/">Configure Ansible</a>
+      <a href="https://linuxhero.tk/dockercommands/">Docker Commands</a>
+      <a href="https://linuxhero.tk/kubernetescommmand/">Kubernetes Commands</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">Devops Projects
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://linuxhero.tk/devopsproject1/">Linux Automation using devops tools</a>
+ 
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Monitoring Tools 
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://linuxhero.tk/nagios/">Configure Nagios</a>
+      <a href="https://linuxhero.tk/splunk/"">Configure Splunk</a>
+    </div>
+  </div>
+    <a href="https://linuxhero.tk/#Topics">New Topics</a>
+    <a href="https://linuxhero.tk/privacy/">Privacy Policy</a>
+    <a href="https://linuxhero.tk/#about">About</a>
+    <a href="https://linuxhero.tk/#contact">Contact Us</a>
+  </div>
+
+<!-------------Top Menu End------------->
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+  <div class="w3-container">
+  <div class="w3-content" style="max-width:700px">
+   <img src="/Docker-cheat-sheet.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+     
+<!-- Content -->
+<div class="w3-container">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">List Of Docker Commands</span></h5>
+    
+    
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">1. Docker Container Commands</span></h5>
+
+<h5><span class="w3-code w3-red">Create a container (without starting it):
+<br>#docker create [IMAGE]
+<br>
+<br>Rename an existing container:
+<br>#docker rename [CONTAINER_NAME] [NEW_CONTAINER_NAME]
+<br>
+<br>Run a command in a new container:
+<br>#docker run [IMAGE] [COMMAND]
+<br>#docker run --rm [IMAGE] – removes a container after it exits.
+<br>
+<br>#docker run -td [IMAGE] – starts a container and keeps it running.
+<br>
+<br>#docker run -it [IMAGE] – starts a container, allocates a pseudo-TTY connected to the container’s stdin, and creates an interactive bash shell in the container.
+<br>
+<br>#docker run -it-rm [IMAGE] – creates, starts, and runs a command inside the container. Once it executes the command, the container is removed.
+<br>
+<br>Delete a container (if it is not running):
+<br>#docker rm [CONTAINER]
+<br>
+<br>Update the configuration of one or more containers:
+<br>#docker update [CONTAINER]
+</span></h5>
+
+   
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">2. Starting and Stopping Containers</span></h5>
+      <h5><span class="w3-code w3-red">Start a container:
+<br>#docker start [CONTAINER]
+<br>
+<br>Stop a running container:
+<br>#docker stop [CONTAINER]
+<br>
+Stop a running container and start it up again:
+<br>#docker restart [CONTAINER]
+<br>
+<br>Pause processes in a running container:
+<br>#docker pause [CONTAINER]
+<br>
+<br>Unpause processes in a running container:
+<br>#docker unpause [CONTAINER]
+<br>
+<br>Block a container until others stop (after which it prints their exit codes):
+<br>#docker wait [CONTAINER]
+<br>
+<br>Kill a container by sending a SIGKILL to a running container:
+<br>#docker kill [CONTAINER]
+<br>
+<br>Attach local standard input, output, and error streams to a running container:
+<br>#docker attach [CONTAINER]
+</span></h5> 
+
+
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">3. Docker Image Commands</span></h5>
+    <h5><span class="w3-code w3-red">Create an image from a dockerfile:
+<br>#docker build [URL]
+<br>#docker build -t – builds an image from a dockerfile in the current directory and tags the image
+<br>
+<br>Pull an image from a registry:
+<br>#docker pull [IMAGE]
+<br>
+<br>Push an image to a registry:
+<br>#docker push [IMAGE]
+<br>
+<br>Create an image from a tarball:
+<br>#docker import [URL/FILE]
+<br>
+<br>Create an image from a container:
+<br>#docker commit [CONTAINER] [NEW_IMAGE_NAME]
+<br>
+<br>Remove an image:
+<br>#docker rmi [IMAGE]
+<br>
+<br>Load an image from a tar archive or stdin:
+<br>#docker load [TAR_FILE/STDIN_FILE]
+<br>
+<br>Save an image to a tar archive, streamed to STDOUT with all parent layers, tags, and versions:
+<br>#docker save [IMAGE] > [TAR_FILE]
+</span></h5> 
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">4. Docker Commands for Container and Image Information</span></h5>
+    
+    <h5><span class="w3-code w3-red">List running containers:
+<br>#docker ps
+<br>#docker ps -a –Lists both running containers and ones that have stopped
+<br>
+<br>List the logs from a running container:
+<br>#docker logs [CONTAINER]
+<br>
+<br>List low-level information on docker objects:
+<br>#docker inspect [OBJECT_NAME/ID]
+<br>
+<br>List real-time events from a container:
+<br>#docker events [CONTAINER]
+<br>
+<br>Show port (or specific) mapping for a container:
+<br>#docker port [CONTAINER]
+<br>
+<br>Show running processes in a container:
+<br>#docker top [CONTAINER]
+<br>
+<br>Show live resource usage statistics of containers:
+<br>#docker stats [CONTAINER]
+<br>
+<br>Show changes to files (or directories) on a filesystem:
+<br>#docker diff [CONTAINER]
+<br>
+<br>List all images that are locally stored with the docker engine:
+<br>#docker image ls
+<br>
+<br>Show the history of an image:
+<br>#docker history [IMAGE]
+</span></h5> 
+    
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">5. Networks</span></h5>
+    <h5><span class="w3-code w3-red">List Networks
+<br>#docker network ls
+<br>
+<br>Remove one or more networks:
+<br>#docker network rm [NETWORK]
+<br>
+<br>Show information on one or more networks:
+<br>#docker network inspect [NETWORK]
+<br>
+<br>Connects a container to a network:
+<br>#docker network connect [NETWORK] [CONTAINER]
+<br>
+<br>Disconnect a container from a network:
+<br>#docker network disconnect [NETWORK] [CONTAINER]
+</span></h5>
+
+</div>
+</div>
+</div>
+<!-- Menu Container -->
+
+
+<!-- Contact/Area Container -->
+ 
+<div class="w3-container" id="contact">
+    <h5><span class="w3-code w3-black">Please email me if you face any issue.</span></h5>
+    <form action="mailto:linuxhero123@gmail.com" method="get" enctype="text/plain">
+      <p><strong>Name: <input type="text" name="name"/></p>
+      <p><strong>Email: <input type="text" name="email"/></p>
+      <p><strong>Comments:
+        <br />
+        <textarea name="comments" rows = "12" cols = "35">Send your comments....</textarea>
+        <br>
+     <h5><span class="w3-code w3-green"><input type="submit" name="submit" value="Send" />
+        <form action="mailto:Allishah2490@gmail.com" 
+         enctype="text/plain" onsubmit="location.href='thanks.html';" >
+        <input type="reset" name="reset" value="Clear Form" />
+      </span></h5>
+    </form>
+  </body>
+  </div>
+</div>
+<!-- hitwebcounter Code START -->
+<h5><span class="w3-code w3-red">views</span></h5> 
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7226025&style=0003&nbdigits=1&type=page&initCount=0" title="User Stats" Alt="PHP Hits Count"   border="0" >
+</a>                                    
+                    
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-large">
+  
+<body>
+   <div class="list-group">
+     <a class="fa fa-linkedin-square" style="font-size:48px;color:white" href="https://www.linkedin.com/in/wajid-a-9b9545139/"></a>
+    </div>
+   </body>
+  
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-black", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-black";
+}
+document.getElementById("myLink").click();
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e8ea64d69e9320caac1c190/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  <script type="text/javascript"> var infolinks_pid = 3249810; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+  }
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+ <a href="https://linuxhero.tk">Home</a>
+   <div class="dropdown">
+     <button class="dropbtn">Linux 
+        <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+        <a href="https://linuxhero.tk/linuxinfo/">Linux Introduction</a>
+       <a href="https://linuxhero.tk/linuxdistros/">Linux Distributions</a>
+       <a href="https://linuxhero.tk/linuxcommands/">Linux Commands</a>
+       <a href="https://linuxhero.tk/ntp/">Configure NTP</a>
+       <a href="https://linuxhero.tk/ssh/">Configure SSH</a>
+       <a href="https://linuxhero.tk/nfs/">Configure NFS</a>
+       <a href="https://linuxhero.tk/iscsi/">Configure iSCSI Storage</a>  
+        <a href="https://linuxhero.tk/dhcp/">Configure Dnsmasq</a>
+       <a href="https://linuxhero.tk/ftp/">Configure FTP Server</a>
+       <a href="https://linuxhero.tk/lvm/">Configure LVM</a>
+     </div>
+    </div> 
+   <div class="dropdown">
+    <button class="dropbtn">Linux Troubleshooting 
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+      <a href="https://linuxhero.tk/Analyzebottlenecks/">Steps To Analyze Linux Performance Bottlenecks</a>
+      <a href="https://linuxhero.tk/cpubottlenecks/">CPU Bottlenecks</a>
+        <a href="https://linuxhero.tk/memorybottlenecks/">Memory Bottlenecks</a>
+       <a href="https://linuxhero.tk/diskbottlenecks/">Disk Bottlenecks</a>
+       <a href="https://linuxhero.tk/networkbottlenecsk/">Network Bottlenecks</a>
+     </div>
+    </div>
+   <div class="dropdown">
+    <button class="dropbtn">Devops 
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://linuxhero.tk/devopsinfo/">What is Devops?</a>
+      <a href="https://linuxhero.tk/devopstools/">Devops Tools</a>
+      <a href="https://linuxhero.tk/jenkins/">Configure Jenkins</a>
+      <a href="https://linuxhero.tk/docker/">Configure Docker</a>
+      <a href="https://linuxhero.tk/kubernetes/">Configure Kubernetes</a>
+      <a href="https://linuxhero.tk/puppet/">Configure Puppet</a>
+      <a href="https://linuxhero.tk/ansible/">Configure Ansible</a>
+      <a href="https://linuxhero.tk/dockercommands/">Docker Commands</a>
+      <a href="https://linuxhero.tk/kubernetescommmand/">Kubernetes Commands</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">Devops Projects
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://linuxhero.tk/devopsproject1/">Linux Automation using devops tools</a>
+ 
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Monitoring Tools 
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://linuxhero.tk/nagios/">Configure Nagios</a>
+      <a href="https://linuxhero.tk/splunk/"">Configure Splunk</a>
+    </div>
+  </div>
+    <a href="https://linuxhero.tk/#Topics">New Topics</a>
+    <a href="https://linuxhero.tk/privacy/">Privacy Policy</a>
+    <a href="https://linuxhero.tk/#about">About</a>
+    <a href="https://linuxhero.tk/#contact">Contact Us</a>
+  </div>
+
+
+<!-------------Top Menu End------------->
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+  <div class="w3-container">
+  <div class="w3-content" style="max-width:700px">
+   <img src="/distributions.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+     
+<!-- Content -->
+<div class="w3-container">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">What are Linux Distributions?</span></h5>
+    <p>One of the most confusing things for the newcomer to Linux is how many distributions, or versions, of the operating system there are. Ubuntu is the one most people have heard of, but there are hundreds of others as well, each offering some variant on the basic Linux theme.</p>
+    <p>However, Linux comes in many different forms, known as 'flavors' or 'distros'. This is simply because Linux is so incredibly configurable that different forms tend to be developed for different userbase needs or interests.</p>
+    <p>Different Linux distros can all work with Linux software and applications, and of course, any cloud-based apps that run through a browser. However, Linux distros come with a variety of different ranges of bundled software. Some might come with a lot of basic applications already pre-installed, while others will have the barest minimum. Please find below few of them, Which are most popular.<p>
+
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">1. Red Hat</span></h5>
+    <p><i>Red Hat is a leading software company in the business of assembling open source components for the Linux operating</i></p>
+    <p>Red Hat Enterprise Linux (RHEL) is a Linux-based operating system from Red Hat designed for businesses. RHEL can work on desktops, on servers, in hypervisors or in the cloud. Red Hat and its community-supported counterpart, Fedora, are among the most widely used Linux distributions in the world.<p>
+    <p>Being a Linux distribution, Red Hat Enterprise Linux contains the Linux kernel as well as some applications for performing certain tasks. Like all Linux distributions, RHEL is open source. Thus, people can view its source code, download it and make their own customized versions.
+
+Some of the notable Linux distros that are actually derived from RHEL include CentOS, Oracle Enterprise Linux, Scientific Linux and Pie Box Enterprise Linux.
+
+In the past, Red Hat gave this enterprise product for free and only charged for support. Later on, they decided to create two versions: RHEL, which would have less frequent version releases and consequently be more stable, and Fedora, which would undergo relatively more frequent version releases and consequently offer more bleeding edge technologies.<p>
+    
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">2. Ubuntu</span></h5>
+      <p><i>One of the most popular distros for good reasons</i></p>
+    <p>Yes, Ubuntu has become the poster child for Linux these days, and no wonder--it's the most popular distro by far, garnering more than 2,200 hits per day on the Distrowatch site alone, compared with some 1,400 for Fedora, the No. 2 contender.<p>
+    <p>Ubuntu is one of the most popular flavors of Linux and along with Mint is strongly recommended for Linux newbies, as it's extremely accessible. 
+
+
+New versions of Ubuntu are released every six months, and every other year the developer Canonical releases an LTS (long term support) version of Ubuntu. These guarantee five years of security and general maintenance updates, so you can carry on using your machine without the hassle of running a full upgrade every few months. Standard releases are supported for one year only. 
+
+The current LTS version of Ubuntu uses the Gnome 3 desktop environment, which may be less familiar to Windows and macOS users.<p>
+
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">3. Linux Mint</span></h5>
+    <p><i>A strong option for those new to Linux</i></p>
+    <p>Currently in Distrowatch's third spot in popularity, Linux Mint is an Ubuntu-based distro that was just launched in 2006. The operating system adds to Ubuntu with its own, distinct desktop theme and a different set of applications; also unique to the distro are a variety of graphical tools for enhanced usability, such as mintDesktop for configuring the desktop environment, mintInstall for easier software installation and mintMenu for easier navigation.<p>
+    <p>Linux Mint is a great ‘default’ distro for new Linux users, as it comes with a lot of the software you’ll need when switching from Mac or Windows, such as LibreOffice, the favoured productivity suite of Linux users. It also has better support for proprietary media formats, allowing you to play videos, DVDs and MP3 music files out of the box.<p>   
+    <p>Linux Mint 18.3 was the last release to have an official KDE version. Unfortunately, this is no longer available with Linux Mint 19, but it can still be installed on top of version 19 if you miss it.<p>
+    
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">4. Debian</span></h5>
+     <p><i>Debian can be downloaded over the Internet or, for a small charge, obtained on CD.</i></p>
+    <p>Dating back to 1993, Debian is currently known as one of the most well-tested and bug-free distros available today. Though it serves as the foundation for Ubuntu, most view Debian as a distro best-suited for those experienced with Linux. The distro uses all open-source components, which is a good thing, but means it can be more difficult to achieve compatibility with proprietary code such as wireless network drivers. Debian also has a relatively slow release cycle, with stable ones coming out every one to three years.<p>
+    
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">5. CentOS</span></h5>
+     <p><i>Offshoot of Enterprise version of Red Hat Linux</i></p>
+    <p>Wikipedia defines CentOS as follows:
+“CentOS (from Community Enterprise Operating System) is a Linux distribution that provides a free, community-supported, enterprise-class, computing platform compatible with its upstream source, (RHEL) or Red Hat Enterprise Linux. In January 2014, CentOS announced the official affiliation with Red Hat while staying independent fromRed Hat Enterprise Linux, under a new CentOS governing board. The first CentOS was released in May 2004, (and numbered as CentOS version 2), was forked from Redhat (RHEL) version 2.1AS…  (The) building of CentOS 8 commenced as of May 2019.<p>   
+ <p>CentOS is an open-source Linux distribution. Many refer to it as a replica of the Red Hat Enterprise Linux (RHEL), which is considered to be the most widely used in the corporate IT world. CentOS is an enterprise class operating system supported by the community and released back in 2004.
+
+Close similarity to RHEL gives you the luxury to develop in a dominant and one of the best Linux distribution out there. One might say that this already gives CentOS a lead over Ubuntu.
+
+It’s highly customizable, secure, and stable, which is also something to appreciate it for. The close link to RHEL allowed CentOS to have quite a few corporate-level security updates thus making it a safe choice for every user.<p>
+ 
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">6. openSUSE</span></h5>
+    <p><i>Primarily targeted at devs and sysadmins</i></p>
+    <p>The openSUSE distribution is a stable, easy to use and complete multi-purpose distribution.
+It is aimed towards users and developers working on the desktop or server. It is great for beginners, experienced users and ultra geeks alike, in short, it is perfect for everybody! The latest release, openSUSE Leap 15.1, features new and massively improved versions of all useful server and desktop applications. It comes with more than 1,000 open source applications. openSUSE Tumbleweed is the rolling release, providing the latest upstream software releases, yet only those packages that pass testing.
+<script data-ad-client="ca-pub-9816877488746708" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+openSUSE is also the base for SUSE's award-winning SUSE Linux Enterprise products.<p>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">7. Fedora</span></h5>
+   <p><i>Red Hat, the largest Linux company and one of the biggest open-source developers in the world, makes Fedora.</i></p>
+    <p> Fedora is good for nearly anything that you'd want to do on your computer, but it's intended mostly for desktops. Fedora uses the GNOME desktop environment which provides an extremely smooth and well-integrated experience. Because it includes the latest software, you'll always have new and exciting features on your desktop by using Fedora.<p>
+    <p> Fedora also offers a six-month release schedule, and its security features are excellent. While some have viewed it as a cutting-edge distro for the Linux "hobbyist," I think improvements over the years and widespread popularity have combined to make it a good choice for newer Linux users as well.<p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+
+
+<!-- Contact/Area Container -->
+ 
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-large">
+  
+<body>
+   <div class="list-group">
+     <a class="fa fa-linkedin-square" style="font-size:48px;color:white" href="https://www.linkedin.com/in/wajid-a-9b9545139/"></a>
+    </div>
+   </body>
+  
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-black", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-black";
+}
+document.getElementById("myLink").click();
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e8ea64d69e9320caac1c190/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  
+</body>
+</html>

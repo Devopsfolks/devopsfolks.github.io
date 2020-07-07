@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+  }
+.navbar {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #808080;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="https://linuxhero.tk">Home</a>
+   <div class="dropdown">
+     <button class="dropbtn">Linux 
+        <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+        <a href="https://linuxhero.tk/linuxinfo/">Linux Introduction</a>
+       <a href="https://linuxhero.tk/linuxdistros/">Linux Distributions</a>
+       <a href="https://linuxhero.tk/linuxcommands/">Linux Commands</a>
+       <a href="https://linuxhero.tk/ntp/">Configure NTP</a>
+       <a href="https://linuxhero.tk/ssh/">Configure SSH</a>
+       <a href="https://linuxhero.tk/nfs/">Configure NFS</a>
+       <a href="https://linuxhero.tk/iscsi/">Configure iSCSI Storage</a>  
+        <a href="https://linuxhero.tk/dhcp/">Configure Dnsmasq</a>
+       <a href="https://linuxhero.tk/ftp/">Configure FTP Server</a>
+       <a href="https://linuxhero.tk/lvm/">Configure LVM</a>
+     </div>
+    </div> 
+   <div class="dropdown">
+    <button class="dropbtn">Linux Troubleshooting 
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+      <a href="https://linuxhero.tk/Analyzebottlenecks/">Steps To Analyze Linux Performance Bottlenecks</a>
+      <a href="https://linuxhero.tk/cpubottlenecks/">CPU Bottlenecks</a>
+        <a href="https://linuxhero.tk/memorybottlenecks/">Memory Bottlenecks</a>
+       <a href="https://linuxhero.tk/diskbottlenecks/">Disk Bottlenecks</a>
+       <a href="https://linuxhero.tk/networkbottlenecsk/">Network Bottlenecks</a>
+     </div>
+    </div>
+   <div class="dropdown">
+    <button class="dropbtn">Devops 
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://linuxhero.tk/devopsinfo/">What is Devops?</a>
+      <a href="https://linuxhero.tk/devopstools/">Devops Tools</a>
+      <a href="https://linuxhero.tk/jenkins/">Configure Jenkins</a>
+      <a href="https://linuxhero.tk/docker/">Configure Docker</a>
+      <a href="https://linuxhero.tk/kubernetes/">Configure Kubernetes</a>
+      <a href="https://linuxhero.tk/puppet/">Configure Puppet</a>
+      <a href="https://linuxhero.tk/ansible/">Configure Ansible</a>
+      <a href="https://linuxhero.tk/dockercommands/">Docker Commands</a>
+      <a href="https://linuxhero.tk/kubernetescommmand/">Kubernetes Commands</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">Devops Projects
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://linuxhero.tk/devopsproject1/">Linux Automation using devops tools</a>
+ 
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Monitoring Tools 
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://linuxhero.tk/nagios/">Configure Nagios</a>
+      <a href="https://linuxhero.tk/splunk/"">Configure Splunk</a>
+    </div>
+  </div>
+    <a href="https://linuxhero.tk/#Topics">New Topics</a>
+    <a href="https://linuxhero.tk/privacy/">Privacy Policy</a>
+    <a href="https://linuxhero.tk/#about">About</a>
+    <a href="https://linuxhero.tk/#contact">Contact Us</a>
+  </div>
+
+
+<!-------------Top Menu End------------->
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-orange w3-scale w3-large">
+     <img src="/programming.gif" alt="Computer man" style="width:100px;height:100px;">
+<!-- Content -->
+<div style="max-width:1200px">
+
+  <div class="w3-content" style="max-width:1000px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-black">	
+Memory Bottlenecks</span></h5>
+ <br>
+  <p>On a Linux system, many programs run at the same time. These programs support multiple users, and some processes are more used than others. Some of these programs use a portion of memory while the rest are “sleeping.” When an application accesses cache, the performance increases because an in-memory access retrieves data, thereby eliminating the need to access slower disks.<p>
+ <br>
+<p>The OS uses an algorithm to control which programs will use physical memory and which are paged out. This is transparent to user programs. Page space is a file created by the OS on a disk partition to store user programs that are not currently in use. Typically, page sizes are 4 KB or 8 KB. In Linux, the page size is defined by using the variable EXEC_PAGESIZE in the include/asm-<architecture>/param.h kernel header file. The process used to page a process out to disk is called pageout.<p>
+<h5><span class="w3-code w3-red">Finding Memory Bottlenecks</span></h5>
+<p>Start your analysis by listing the applications that are running on the server. Determine how much physical memory and swap each application needs to run.<p>
+
+ 
+<h5><span class="w3-code w3-red">Memory available:- </span></h5>
+<p> This indicates how much physical memory is available for use. If, after you start your application, this value has decreased significantly, you might have a memory leak. Check the application that is causing it and make the necessary adjustments. Use free -lt for additional information.<p>
+<br>
+
+
+<h5><span class="w3-code w3-red">Page faults:-</span></h5>
+
+<p>There are two types of page faults: soft page faults, when the page is found in memory, and hard page faults, when the page is not found in memory and must be fetched from disk. Accessing the disk will slow your application considerably. The sar -B command can provide useful information for analyzing page faults, specifically columns pgpgin/s and pgpgout/s.<p>
+<br> 
+
+ <h5><span class="w3-code w3-red">File system cache:-
+</span></h5>
+
+<p>This is the common memory space used by the file system cache. Use the free -lt command for additional information.<p>
+<br>
+ <h5><span class="w3-code w3-red">Private memory for process:-
+</span></h5>
+<p>This represents the memory used by each process running on the server. You can use the pmap command to see how much memory is allocated to a specific process.<p> 
+<h5><span class="w3-code w3-red">
+  Why swap is getting used though there is enough memory?
+</span></h5> 
+<p>Linux handles swap space efficiently. While swap is nothing more than a guarantee in case of over-allocation of main memory in other operating systems, Linux kernel utilizes swap space far more efficiently. Virtual memory is composed of both physical memory and the disk subsystem or the swap partition. If the virtual memory manager in linux realizes that a memory page has been allocated but not used for a significant amount of time, it moves this memory page to swap space.<p>
+<p>Often you will see daemons such as "getty" that will be launched when the system starts up but will hardly ever be used. It appears that it would be more efficient to free the expensive main memory of such a page and move the memory page to swap. This is exactly how Linux kernel handles swap, so there is no need to be alarmed if you find the swap partition filled to 50%. The fact that swap space is being used does not mean a memory bottleneck but rather proves how efficiently Linux handles system resources. Also, a swapped out page stays in swap space until there is a need for it, that is when it gets moved in (swap-in).<p>
+
+<h5><span class="w3-code w3-red">Why is there a high amount of cache memory being consumed? What is this
+“cached/cache” in free command output?</span></h5> 
+<br>
+<p>Simply it shows the amount of RAM space occupied by "Page Cache". Cache pages are nothing but the data/files which gets copied over to RAM when kernel performs read/write operation on a disk. The reason for keeping these page cache is for I/O performance. So, kernel maintains these files on RAM and frees them up whenever not required or whenever a new memory space is requested by a new process/command provided no free space available in RAM. For a simple read operations it would be marked as "clean" pages, however, writes would mark them "dirty" and becomes clean after updating on disk. These "cached" pages would remain in memory even not used and would not move out even when not required. So, as a system usage goes these cached pages size would also grow. This is usually not a concern to be worried, however, sometimes yes when "cache" is consuming most of the memory and system starts to swap pages.<p>
+
+
+   <h5><span class="w3-code w3-red">Performance tuning options:-
+</span></h5> 
+<!-- Menu Container -->
+<br>
+<h5><span class="w3-code w3-red">- Tune the swap space using bigpages, hugetlb, shared memory.
+<br>- Increase or decrease the size of pages.
+<br>- Improve the handling of active and inactive memory.
+<br>- Adjust the page out rate.
+<br>- Limit the resources used for each user on the server.
+<br>- Stop the services that are not needed.
+<br>- Add memory.</span></h5> 
+
+<h5><span class="w3-code w3-red">
+Tuning the vm subsystem:-</span></h5> 
+<p>Tuning the memory subsystem is a challenging task that requires constant monitoring to
+ensure that changes do not negatively affect other subsystems in the server. If you do choose
+to modify the virtual memory parameters (in /proc/sys/vm), we recommend that you change
+only one parameter at a time and monitor how the server performs.<p>
+
+<p>Remember that most applications under Linux do not write directly to the disk; they write to
+the file system cache maintained by the virtual memory manager that will eventually flush out
+the data. When using an IBM ServeRAID controller or an IBM TotalStorage disk subsystem,
+you should try to the decrease the number of flushes, effectively increasing the I/O stream
+caused by each flush. The high-performance disk controller can handle the larger I/O stream
+more efficiently than multiple small ones.<p>
+<br>
+
+<h5><span class="w3-code w3-red">Setting kernel swap and pdflush behavior:-</span></h5> 
+
+<p>The parameter stored in /proc/sys/vm/swappiness can be used to define how
+aggressively memory pages are swapped to disk. An introduction to the Linux virtual
+memory manager and the general use of swap space in Linux is discussed in “Page frame
+reclaiming” on page 14. It states that Linux moves memory pages that have not been
+accessed for some time to the swap space even if there is enough free memory available.
+By changing the percentage in /proc/sys/vm/swappiness you can control that behavior,
+depending on the system configuration. If swapping is not desired,
+/proc/sys/vm/swappiness should have low values. Systems with memory constraints that
+run batch jobs (processes that sleep for a long time) might benefit from an aggressive
+swapping behavior. To change swapping behavior, use either echo or sysctl as shown below.<p>
+
+
+<h5><span class="w3-code w3-black">#Changing swappiness behavior
+<br>[root@server ~]# sysctl -w vm.swappiness=100</span></h5> 
+
+<p>Especially for fast disk subsystems, it might also be desirable to cause large flushes of
+dirty memory pages. The value stored in /proc/sys/vm/dirty_background_ratio defines
+at what percentage of main memory the pdflush daemon should write data out to the disk.
+If larger flushes are desired then increasing the default value of 10% to a larger value will
+cause less frequent flushes. As in the example above, the value can be changed as shown
+below.<p>
+
+<h5><span class="w3-code w3-black">Increasing the wake up time of pdflush
+<br>[root@server ~]# sysctl -w vm.dirty_background_ratio=25
+</span></h5>
+
+<br>
+
+<p>Another related setting in the virtual memory subsystem is the ratio at which dirty pages
+created by application disk writes will be flushed out to disk. The writes to the file system will not be written instantly
+but rather written in the page cache and flushed out to the disk subsystem at a later stage.
+Using the parameter stored in /proc/sys/vm/dirty_ratio the system administrator can
+define at what level the actual disk writes will take place. The value stored in dirty_ratio
+is a percentage of main memory. A value of 10 would mean that data will be written into
+system memory until the file system cache has a size of 10% of the server’s RAM. As in
+the previous two examples, the ratio at which dirty pages are written to disk can be altered
+as follows to a setting of 20% of the system memory:<p>
+
+<h5><span class="w3-code w3-black">Altering the dirty ratio
+<br>[root@server ~]# sysctl -w vm.dirty_ratio=20
+</span></h5>
+<br>
+<h5><span class="w3-code w3-red">Swap partition:-</span></h5>
+
+<p>The swap device is used when physical RAM is fully in use and the system needs additional
+memory. Linux also uses swap space to page memory areas to disk that have not been
+accessed for a significant amount of time. When no free memory is available on the system, it
+begins paging the least used data from memory to the swap areas on the disks. The initial
+swap partition is created during the Linux installation process with current guidelines stating
+that the size of the swap partition should be two times physical RAM. Linux kernels 2.4 and
+beyond support swap sizes up to 24 GB per partition with an 8 TB theoretical maximum for
+32-bit systems. Swap partitions should reside on separate disks.<p>
+
+<p> If more memory is added to the server after the initial installation, additional swap space must
+be configured. There are two ways to configure additional swap space after the initial install:<p>
+
+<p>1. A free partition on the disk can be created as a swap partition. This can be difficult if the
+disk subsystem has no free space available. In that case, a swap file can be created.<p>
+
+<p>2. If there is a choice, the preferred option is to create additional swap partitions. There is a
+performance benefit because I/O to the swap partitions bypasses the file system and all of
+the overhead involved in writing to a file.<p>
+
+<h5><span class="w3-code w3-red">How to test all above tips at home for Memory issue.</span></h5>
+
+<h5><span class="w3-code w3-red">"stress" tool</span></h5>
+<p><b>It is a workload generator tool designed to subject your system to a configurable measure of CPU, memory, I/O and disk stress.<b><p>
+<br>
+<h5><span class="w3-code w3-red">DO NOT TRY THIS TOOL IN PRODUCTION.</span></h5>
+<br>
+<p><b>Install stress tool:-<b><p>
+<h5><span class="w3-code w3-black">#Install epel-release first if not installed
+<br>[root@server ~]#  yum install epel-release
+<br>[root@server ~]# yum install stress</span></h5>
+<br>
+<br># To check options on how to use
+<h5><span class="w3-code w3-black">[root@server ~]# stress --help</span></h5>
+
+<p><b>Lets Try:--<b><p>
+<h5><span class="w3-code w3-black">
+#check load before running
+<br>[root@server ~]# uptime
+<br>#putting memory load on server
+<br>[root@server ~]# sudo stress --vm 2 --vm-bytes 300M --timeout 30s
+<br>#After runnings stress command check load
+<br>[root@server ~]# uptime
+<br>
+</span></h5>
+<h5><span class="w3-code w3-black">Now try above tuning option to reduce some load.</span></h5>
+
+
+<!-- Contact/Area Container -->
+ 
+<div class="w3-container" id="contact">
+    <h5><span class="w3-code w3-black">Please email me if you face any issue.</span></h5>
+    <form action="mailto:linuxhero123@gmail.com" method="get" enctype="text/plain">
+      <p><strong>Name: <input type="text" name="name"/></p>
+      <p><strong>Email: <input type="text" name="email"/></p>
+      <p><strong>Comments:
+        <br />
+        <textarea name="comments" rows = "12" cols = "35">Send your comments....</textarea>
+        <br>
+     <h5><span class="w3-code w3-green"><input type="submit" name="submit" value="Send" />
+        <form action="mailto:Allishah2490@gmail.com" 
+         enctype="text/plain" onsubmit="location.href='thanks.html';" >
+        <input type="reset" name="reset" value="Clear Form" />
+      </span></h5>
+    </form>
+  </body>
+  </div>
+</div>
+<!-- hitwebcounter Code START -->
+<h5><span class="w3-code w3-red">views</span></h5> 
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7226025&style=0003&nbdigits=1&type=page&initCount=0" title="User Stats" Alt="PHP Hits Count"   border="0" >
+</a>                                    
+                    
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-large">
+  
+<body>
+   <div class="list-group">
+     <a class="fa fa-linkedin-square" style="font-size:48px;color:white" href="https://www.linkedin.com/in/wajid-a-9b9545139/"></a>
+    </div>
+   </body>
+  
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-black", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-black";
+}
+document.getElementById("myLink").click();
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e8ea64d69e9320caac1c190/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  
+</body>
+</html>
