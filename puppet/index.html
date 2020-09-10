@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+  }
+.navbar {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #808080;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="https://linuxhero.tk">Home</a>
+   <div class="dropdown">
+     <button class="dropbtn">Linux 
+        <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+        <a href="https://linuxhero.tk/linuxinfo/">Linux Introduction</a>
+       <a href="https://linuxhero.tk/linuxdistros/">Linux Distributions</a>
+       <a href="https://linuxhero.tk/linuxcommands/">Linux Commands</a>
+       <a href="https://linuxhero.tk/ntp/">Configure NTP</a>
+       <a href="https://linuxhero.tk/ssh/">Configure SSH</a>
+       <a href="https://linuxhero.tk/nfs/">Configure NFS</a>
+       <a href="https://linuxhero.tk/iscsi/">Configure iSCSI Storage</a>  
+        <a href="https://linuxhero.tk/dhcp/">Configure Dnsmasq</a>
+       <a href="https://linuxhero.tk/ftp/">Configure FTP Server</a>
+       <a href="https://linuxhero.tk/lvm/">Configure LVM</a>
+     </div>
+    </div> 
+   <div class="dropdown">
+    <button class="dropbtn">Linux Troubleshooting 
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+      <a href="https://linuxhero.tk/Analyzebottlenecks/">Steps To Analyze Linux Performance Bottlenecks</a>
+      <a href="https://linuxhero.tk/cpubottlenecks/">CPU Bottlenecks</a>
+        <a href="https://linuxhero.tk/memorybottlenecks/">Memory Bottlenecks</a>
+       <a href="https://linuxhero.tk/diskbottlenecks/">Disk Bottlenecks</a>
+       <a href="https://linuxhero.tk/networkbottlenecsk/">Network Bottlenecks</a>
+     </div>
+    </div>
+   <div class="dropdown">
+    <button class="dropbtn">Devops 
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://linuxhero.tk/devopsinfo/">What is Devops?</a>
+      <a href="https://linuxhero.tk/devopstools/">Devops Tools</a>
+      <a href="https://linuxhero.tk/jenkins/">Configure Jenkins</a>
+      <a href="https://linuxhero.tk/docker/">Configure Docker</a>
+      <a href="https://linuxhero.tk/kubernetes/">Configure Kubernetes</a>
+      <a href="https://linuxhero.tk/puppet/">Configure Puppet</a>
+      <a href="https://linuxhero.tk/ansible/">Configure Ansible</a>
+      <a href="https://linuxhero.tk/dockercommands/">Docker Commands</a>
+      <a href="https://linuxhero.tk/kubernetescommmand/">Kubernetes Commands</a>
+    </div>
+  </div>
+   <div class="dropdown">
+    <button class="dropbtn">Devops Projects
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://linuxhero.tk/devopsproject1/">Linux Automation using devops tools</a>
+ 
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Monitoring Tools 
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://linuxhero.tk/nagios/">Configure Nagios</a>
+      <a href="https://linuxhero.tk/splunk/"">Configure Splunk</a>
+    </div>
+  </div>
+    <a href="https://linuxhero.tk/#Topics">New Topics</a>
+    <a href="https://linuxhero.tk/privacy/">Privacy Policy</a>
+    <a href="https://linuxhero.tk/#about">About</a>
+    <a href="https://linuxhero.tk/#contact">Contact Us</a>
+  </div>
+
+
+<!-------------Top Menu End------------->
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-orange w3-scale w3-large">
+     <img src="/programming.gif" alt="Computer man" style="width:100px;height:100px;">
+<!-- Content -->
+<div style="max-width:1200px">
+
+  <div class="w3-content" style="max-width:1000px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-black">	
+Puppet</span></h5>
+
+  <p><i>If there was ever a ubiquitous tool for DevOps software
+deployment, it is Puppet. Even if an organization isn’t “doing
+DevOps,” it probably is using Puppet somewhere. Puppet is very
+good at getting applications deployed to pre-built infrastructure.
+For those just getting started with deployment automation,
+Puppet is a good place to start. But it is not just for beginners:
+According to the company, more than 3 in 4 Fortune 100
+companies use Puppet for application deployment<i><p>
+
+  <p><i>Puppet automates the installation and configuration of
+applications on target servers. By writing scripts that define
+and install application prerequisites, setting the server
+variables the application requires and writing configuration
+scripts for applications and daemons, a team can then
+simply rerun the script to reinstall. A large user community
+has already scripted many application installations. For a
+large number of software applications — particularly in the
+open source realm — users merely need to download the
+relevant puppet script files and change what is written to the
+configuration files to reflect their project.<i><p>
+
+<h5 <span class="w3-tag w3-red">[Puppet Master] |192.0.0.20 ---------------- 192.0.0.30|  [Puppet Agent] <br>Master.example.com  <--------------------->  Agent.example.com</span></h5>
+
+<h5><span class="w3-code w3-red">Lets start to configure Puppet:-
+ </span></h5>
+ <br>
+    
+<h5><span class="w3-code w3-red">Configure Puppet Master:-
+ </span></h5>
+ <br>
+<h5><span class="w3-code w3-red"> Step:1 Update Hostname
+</span></h5> <h5><span class="w3-code w3-black">[root@master ~]# vim /etc/hosts
+<br>192.0.0.20 master.example.com
+<br>192.0.0.30 agent.example.com
+<br>
+<br>#Now try to ping by name, make sure you get the server IP address
+<br>[root@master ~]# ping master.example.com
+<br>[root@master ~]# ping agent.example.com
+</span></h5>
+ <br>
+ <h5><span class="w3-code w3-red">Step:2  Configure NTP Server
+    </span></h5>
+  <h5><span class="w3-code w3-black">[root@master ~]#  yum -y install ntp ntpdate
+  <br>[root@master ~]# ntpdate 0.centos.pool.ntp.org
+   <br>[root@master ~]# systemctl start ntpd
+    <br>   [root@master ~]# systemctl enable ntpd    
+   </span></h5>
+  <br>
+    <h5><span class="w3-code w3-red">Step:3 Disable SELinux
+    </span></h5>
+     <h5><span class="w3-code w3-black">[root@master ~]#  vim /etc/sysconfig/selinux
+     <br>SELINUX=disabled
+</span></h5>
+    <br>
+    <h5><span class="w3-code w3-red">Step:4  Add Puppet Repository
+    </span></h5>
+    
+<h5><span class="w3-code w3-black">
+  [root@master ~]# rpm -Uvh https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm
+   <br>[root@master ~]# reboot
+</span></h5> 
+<br>
+<h5><span class="w3-code w3-red">Step:5 Install and Configure Puppetserver
+</span></h5>
+
+<h5><span class="w3-code w3-black">
+[root@master ~]# yum -y install puppetserver
+   <br>[root@master ~]# vim /etc/sysconfig/puppetserver
+    <br> JAVA_ARGS="-Xms1g -Xmx1g ...."
+    <br>
+    <br># go to the puppet configuration directory and edit the 'puppet.conf' file.
+    <br>cd /etc/puppetlabs/puppet
+<br>[root@master ~]# vim puppet.conf
+<br># add the following configuration
+<br>[master]
+<br>dns_alt_names=master.example.com,puppet
+<br>[main]
+<br>certname = master.example.com
+<br>server = master.example.com
+<br>environment = production
+<br>runinterval = 1h
+</span></h5>  
+<br>
+
+<h5><span class="w3-code w3-black">[root@master ~]# systemctl start puppetserver
+    <br>   [root@master ~]# systemctl puppetserver  </span></h5>
+    <h5><span class="w3-code w3-black">[root@master ~]# firewall-cmd --add-port=8140/tcp --permanent
+<br>[root@master ~]# firewall-cmd --reload</span></h5>
+<br>
+    <h5><span class="w3-code w3-red">Configure Puppet Agent:-
+ </span></h5>
+ <br>
+    
+    <h5><span class="w3-code w3-red">Step:1 Install and Configure Puppet Agent
+ </span></h5>
+    <h5><span class="w3-code w3-black">[root@agent ~]# yum install -y puppet-agent
+    <br>   [root@agent ~]# systemctl puppetserver  </span></h5>
+    <br>
+    
+    <h5><span class="w3-code w3-black">[root@agent ~]# cd /etc/puppetlabs/puppet
+<br>[root@agent ~]# vim puppet.conf
+<br># Paste the following configuration.
+ <br> [main]
+ <br>certname = agent.example.com
+ <br>server = master.example.com
+ <br>environment = production
+ <br>runinterval = 1h
+   </span></h5>  
+    <br>
+    <h5><span class="w3-code w3-red">Step:2 # Next, we will register the puppet agent to the puppet master.
+<br># Run the command below on the puppet agent shell.
+  </span></h5>
+   <h5><span class="w3-code w3-black">[root@agent ~]# /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+     </span></h5>
+    
+    <h5><span class="w3-code w3-red">The puppet agent is now running on the server, and it's attempting to register itself to the puppet master.
+    <br>
+<br>Step:3  Now back to the puppet master shell and run the command below.   
+  </span></h5>
+    
+    <h5><span class="w3-code w3-black">[root@master ~]# /opt/puppetlabs/bin/puppet cert list
+     </span></h5>
+   <br>
+    <h5><span class="w3-code w3-red">Step:4 Sign the certificate using the command below.
+  </span></h5>
+    <h5><span class="w3-code w3-black">[root@master ~]# /opt/puppetlabs/bin/puppet cert sign agent.example.com
+     </span></h5>
+    <br>
+    <h5><span class="w3-code w3-red">Step:5  Verify the Puppet Agent Configuration from agent machine
+  </span></h5>
+    <h5><span class="w3-code w3-black"> [root@agent ~]# /opt/puppetlabs/bin/puppet agent --test
+     </span></h5>
+   <br>
+   <h5><span class="w3-code w3-red"> The puppet master and agent installation and configuration have been completed.</span></h5>
+ <br>
+    <h5><span class="w3-code w3-red">Create Your First Manifest
+  </span></h5>
+    
+    <p><i>we will create a simple manifest for testing.
+
+<br>We will create the manifest for Apache httpd web server installation.<i><p>
+
+<h5><span class="w3-code w3-red">On the puppet master server, go to the '/etc/puppetlabs/code/' directory and create the new manifest file 'myconfig.pp' using vim.</span></h5>
+<br>
+    <h5><span class="w3-code w3-black"> [root@master ~]# cd /etc/puppetlabs/code/
+<br>[root@master ~]# cd environments/production/manifests
+     </span></h5> 
+      <br>
+     <h5><span class="w3-code w3-red">  Create new manifest file.</span></h5>
+      <h5><span class="w3-code w3-black"> [root@master ~]#  vim myconfig.pp
+       <br> node 'agent.example.com' {
+     <br>package { 'httpd':
+        <br> ensure  => "installed",
+     <br>}
+     <br>service { 'httpd':
+        <br> ensure => running,
+     <br>enable => true
+     <br>}
+ <br>}
+     </span></h5>
+      <br>
+      <h5><span class="w3-code w3-red">Run below command on agent<span></h5>
+       <h5><span class="w3-code w3-black">[root@agent ~]#  /opt/puppetlabs/bin/puppet agent --test<span></h5>
+       <h5><span class="w3-code w3-red"> #The command will retrieve new manifest configuration file from the puppet master and then apply it to the agent server.
+<br>
+          <br>Open your web browser and type the IP address of the puppet agent.
+         <span></h5>
+         
+         <h5><span class="w3-code w3-red">http://192.168.0.30/
+
+<br>And you will get the default HTTP page.<span></h5>
+       <br>
+           <h5><span class="w3-code w3-red">Now, You are ready to use puppet! <span></h5>
+           
+      
+   
+
+
+
+    
+    
+    
+    
+<!-- Contact/Area Container -->
+ 
+<div class="w3-container" id="contact">
+    <h5><span class="w3-code w3-black">Please email me if you face any issue.</span></h5>
+    <form action="mailto:linuxhero123@gmail.com" method="get" enctype="text/plain">
+      <p><strong>Name: <input type="text" name="name"/></p>
+      <p><strong>Email: <input type="text" name="email"/></p>
+      <p><strong>Comments:
+        <br />
+        <textarea name="comments" rows = "12" cols = "35">Send your comments....</textarea>
+        <br>
+     <h5><span class="w3-code w3-green"><input type="submit" name="submit" value="Send" />
+        <form action="mailto:Allishah2490@gmail.com" 
+         enctype="text/plain" onsubmit="location.href='thanks.html';" >
+        <input type="reset" name="reset" value="Clear Form" />
+      </span></h5>
+    </form>
+  </body>
+  </div>
+</div>
+<!-- hitwebcounter Code START -->
+<h5><span class="w3-code w3-red">views</span></h5> 
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=7226025&style=0003&nbdigits=1&type=page&initCount=0" title="User Stats" Alt="PHP Hits Count"   border="0" >
+</a>                                    
+                    
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-large">
+  
+<body>
+   <div class="list-group">
+     <a class="fa fa-linkedin-square" style="font-size:48px;color:white" href="https://www.linkedin.com/in/wajid-a-9b9545139/"></a>
+    </div>
+   </body>
+  
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-black", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-black";
+}
+document.getElementById("myLink").click();
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e8ea64d69e9320caac1c190/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+  
+</body>
+</html>
